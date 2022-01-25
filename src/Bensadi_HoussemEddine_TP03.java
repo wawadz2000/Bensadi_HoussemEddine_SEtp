@@ -29,7 +29,8 @@ public class Bensadi_HoussemEddine_TP03 {
             for (int i = 0; i < 10; i++) {
                 try {
                     SE.acquire();
-                    System.out.print('H');
+                    System.out.print('E');
+                    SL.release();
                     SL.release();
                 } catch (InterruptedException e) {
                      Logger.getLogger(Bensadi_HoussemEddine_TP03.class.getName()).log(Level.SEVERE, null, e);
@@ -47,7 +48,7 @@ public class Bensadi_HoussemEddine_TP03 {
             for (int i = 0; i < 10; i++) {
                 try {
                     SL.acquire();
-                    System.out.print('H');
+                    System.out.print('L');
                     SO.release();
                 } catch (InterruptedException e) {
                      Logger.getLogger(Bensadi_HoussemEddine_TP03.class.getName()).log(Level.SEVERE,null, e);
@@ -66,7 +67,7 @@ public class Bensadi_HoussemEddine_TP03 {
                 try {
                     SO.acquire();
                     SO.acquire();
-                    System.out.print('H');
+                    System.out.print("O\n");
                     SH.release();
                 } catch (InterruptedException e) {
                      Logger.getLogger(Bensadi_HoussemEddine_TP03.class.getName()).log(Level.SEVERE, null, e);
@@ -83,7 +84,7 @@ public class Bensadi_HoussemEddine_TP03 {
         SO = new Semaphore(0);
         PH ph = new PH();
         ph.start();
-        PH pe = new PH();   
+        PE pe = new PE();   
         pe.start();
         PL pl = new PL();
         pl.start();
