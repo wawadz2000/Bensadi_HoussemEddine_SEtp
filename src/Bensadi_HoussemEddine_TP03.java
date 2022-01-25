@@ -22,8 +22,6 @@ public class Bensadi_HoussemEddine_TP03 {
     }
 
     public static class PE extends Thread {
-        static Semaphore SH, SE, SL, SO;
-
         @Override
         public void run() {
             for (int i = 0; i < 10; i++) {
@@ -41,8 +39,6 @@ public class Bensadi_HoussemEddine_TP03 {
     }
 
     public static class PL extends Thread {
-        static Semaphore SH, SE, SL, SO;
-
         @Override
         public void run() {
             for (int i = 0; i < 10; i++) {
@@ -59,8 +55,6 @@ public class Bensadi_HoussemEddine_TP03 {
     }
 
     public static class PO extends Thread {
-        static Semaphore SH, SE, SL, SO;
-
         @Override
         public void run() {
             for (int i = 0; i < 10; i++) {
